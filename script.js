@@ -48,13 +48,37 @@ if (element && element.bulmaCarousel) {
 /////////////////////////////////////////////////////////////////////////////////////////////
 // RAWG API
 
-var rawgURL = $.get("https://api.rawg.io/api/platforms?key=e318c637851a4a5b9428f416408759cc");
+// $("#button").on("submit", function(e){
+// 	console.log(e);
+// rawgURL.done(function(response) {
+//     console.log("success got rawg data", response);
+// }).then(function(response) {
+// 	JSON.stringify(response);
+// 	var game = $("#userGameInput").val().trim();
+// 	var rawgURL = $.get(`https://api.rawg.io/api/games?search=${game}&key=e318c637851a4a5b9428f416408759cc`);
 
-rawgURL.done(function(response) {
-    console.log("success got rawg data", response);
-}).then(function(response) {
-    JSON.stringify(response);
 
-    $(".card-header-title").text(response.results[0].games[0].name);
+
+//     // $(".card-header-title").text(response.results[0].games[0].name);
+// });
+
+// });
+
+$(".button").on("click", function(e){
+	e.preventDefault();
+	console.log(e);
+
+	var game = $("#userGameInput").val().trim();
+
+	localStorage.setItem("game", game);
+
+	var queryURL = `https://api.rawg.io/api/games?search=${game}&key=e318c637851a4a5b9428f416408759cc`;
+
+	$.ajax({
+		url: queryURL,
+		method: "GET"
+	}).then(function(response){
+		console.log(response);
+	});
+
 });
-
