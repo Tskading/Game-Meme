@@ -48,13 +48,28 @@ if (element && element.bulmaCarousel) {
 /////////////////////////////////////////////////////////////////////////////////////////////
 // RAWG API
 
-var rawgURL = $.get("https://api.rawg.io/api/platforms?key=e318c637851a4a5b9428f416408759cc");
+$(".button").on("click", function(e){
+	e.preventDefault();
+	console.log(e);
 
-rawgURL.done(function(response) {
-    console.log("success got rawg data", response);
-}).then(function(response) {
-    JSON.stringify(response);
+	var game = $("#userGameInput").val().trim();
 
-    $(".card-header-title").text(response.results[0].games[0].name);
+	localStorage.setItem("game", game);
+
+	var queryURL = `https://api.rawg.io/api/games?search=${game}&key=e318c637851a4a5b9428f416408759cc`;
+
+	$.ajax({
+		url: queryURL,
+		method: "GET"
+	}).then(function(response){
+		console.log(response);
+
+		// console.log(response.results[0].backgroun_image);
+
+
+		$("#gameImage").attr("src", response.results[0].background_image);
+		$(".card-header-title").text(response.results[0].name);
+		// $("#gameTextEl").text(response.results[0].);
+	});
+
 });
-
