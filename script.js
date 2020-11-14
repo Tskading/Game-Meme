@@ -67,7 +67,7 @@ $(".button").on("click", function(e){
 		// console.log(response.results[0].backgroun_image);
 
 
-		$("#gameImage").attr("src", response.results[0].background_image);
+		$("#main-img").attr("src", response.results[0].background_image);
 		$(".card-header-title").text(response.results[0].name);
 		// $("#gameTextEl").text(response.results[0].);
 	});
