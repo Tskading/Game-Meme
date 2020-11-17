@@ -53,23 +53,72 @@ $(".button").on("click", function(e){
 	console.log(e);
 
 	var game = $("#userGameInput").val().trim();
-
-	localStorage.setItem("game", game);
-
+	
 	var queryURL = `https://api.rawg.io/api/games?search=${game}&key=e318c637851a4a5b9428f416408759cc`;
+	
+	localStorage.setItem("game", game);
+	
 
 	$.ajax({
 		url: queryURL,
 		method: "GET"
-	}).then(function(response){
-		console.log(response);
+		}).then(function(response){
+			console.log(response);
+			// Set youtube game ID in local storage here 
+			localStorage.setItem("gameID", response.results[0].id);
+			// console.log(response.results[0].backgroun_image);
 
-		// console.log(response.results[0].backgroun_image);
 
+			$("#main-img").attr("src", response.results[0].background_image);
 
-		$("#main-img").attr("src", response.results[0].background_image);
-		$(".card-header-title").text(response.results[0].name);
-		// $("#gameTextEl").text(response.results[0].);
+			$(".card-header-title").text(response.results[0].name);
+
+			// var releaseDate = response.results[0].released;
+			// var p = $("<p>");
+
+			// p.addClass("release").text("Release Date: " + releaseDate);
+			// $("#gameReturns").prepend(p);
+					
 	});
 
+
 });
+// This section handles the youtube video data
+$(".button").on("click", function(response2){
+	response2.preventDefault();
+	
+	var id = localStorage.getItem("gameID");
+	var queryYouTube = `https://api.rawg.io/api/games/${id}/youtube`;
+	
+	
+	$.ajax({
+		url: queryYouTube,
+		method: "GET"
+	}).then(function(response2){
+		console.log(response2);
+		console.log(id);
+		console.log(externalID);
+
+		var externalID = response2.results[0].external_id;
+		$("#gameReturns").text("https://www.youtube.com/watch?v=" + externalID);
+	});
+});
+
+
+// THis section handles the achievement data
+$(".button").on("click", function(response3){
+	console.log(response3);
+
+	var id2 = localStorage.getItem("gameID");
+	var queryAchievements = `https://api.rawg.io/api/games/${id2}/achievements`;
+
+	$.ajax({
+		url:queryAchievements,
+		method: "GET"
+	}).then(function(response3){
+		console.log(response3);
+
+		// $("#gameReturns").children.
+	})
+});
+	
