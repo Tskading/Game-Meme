@@ -11,7 +11,15 @@
       href="~bulma-carousel/dist/css/bulma-carousel.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/full.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
     <title>Game Meme</title>
   </head>
   <body>
@@ -27,13 +35,7 @@
       <div class="hero-head">
         <nav class="navbar">
           <div class="hero-container">
-            <div class="navbar-brand">
-              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
+            <div class="navbar-brand"></div>
             <div id="navbarMenuHeroA" class="navbar-menu"></div>
           </div>
         </nav>
@@ -48,31 +50,60 @@
 
     <section class="search-bar">
       <div class="field has-addons">
-        <a class="button is-info"> <i class="fab fa-searchengin"></i></a>
-        <input class="input" id="userGameInput" type="text" placeholder="Find a game" />
+        <a class="button is-info" id="searchBtn">
+          <i class="fab fa-searchengin fa-lg"></i
+        ></a>
+        <form>
+          <input
+            class="input"
+            id="userGameInput"
+            type="text"
+            placeholder="Find a game"
+          />
+        </form>
       </div>
     </section>
+
+    <aside class="side-bar">
+      <div class="list-links">
+        <ul class="links">
+          <li><a href="#" id="link1">test link one</a></li>
+          <hr />
+          <li><a href="#" id="link1">test link one</a></li>
+          <hr />
+          <li><a href="#" id="link1">test link one</a></li>
+          <hr />
+          <li><a href="#" id="link1">test link one</a></li>
+          <hr />
+          <li><a href="#" id="link1">test link one</a></li>
+          <hr />
+          <li><a href="#" id="link1">test link one</a></li>
+          <hr />
+        </ul>
+      </div>
+    </aside>
+
     <!-- card-Image -->
     <div class="card-domain">
       <div class="card">
         <div class="card-image">
-          <img
-            id="main-img"
-            alt="game image"
-          />
+          <img id="main-img" alt="game image" />
         </div>
       </div>
 
       <!-- card -->
       <div class="card" id="game-text">
         <header class="card-header">
-          <p class="card-header-title">Game title</p>
+          <p class="card-header-title" id="game-title">Game title</p>
         </header>
         <div class="card-content">
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris.
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            </p>
           </div>
+
+          <div class="rating">⭐⭐⭐⭐⭐</div>
         </div>
       </div>
     </div>
@@ -113,11 +144,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script src= "script.js"></script>
- 
-
+    <script src="script.js"></script>
   </body>
 </html>
-
-
-

@@ -1,0 +1,108 @@
+@media Screen and (max-width: 600px) {
+  .hero.is-primary {
+    z-index: 1;
+    color: #fff;
+    background-color: #666666;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  }
+
+  .hero-background {
+    z-index: -1;
+    opacity: 0.4;
+    background-image: url(../images/gameHero1.jpeg);
+  }
+
+  .title-container {
+    position: inline-flex;
+    width: 100vw;
+  }
+
+  #hero-title {
+    font-size: 3.5rem;
+  }
+
+  .search-bar {
+    margin: auto;
+    border-radius: 0;
+    box-shadow: 0 0 2px 0 #8a8787;
+  }
+
+  .button {
+    width: 7vw;
+    border-radius: 0;
+    box-shadow: 0 0 2px 0 #8a8787;
+  }
+
+  .card-domain {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    height: 35vh;
+    width: 40vw;
+    margin: 4%;
+    box-shadow: #0066ff 0px 15px 20px -10px;
+  }
+
+  #game-title {
+    justify-content: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.1rem;
+  }
+
+  #game-text {
+    width: 40vw;
+    border: none;
+  }
+
+  .rating {
+    background-color: #f5ae5c;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #main-img {
+    display: block;
+    height: 35vh;
+    width: 40vw;
+  }
+
+  .footer-domain {
+    border: solid 0.5px #d6d1d1fa;
+    background-color: #5686a5;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+  }
+
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+  }
+
+  #searchBtn {
+    color: #ffff00;
+    background: linear-gradient(to right, #0066ff 0%, #6600ff 55%);
+  }
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+  }
+}
