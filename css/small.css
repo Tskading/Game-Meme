@@ -1,0 +1,44 @@
+@media Screen and (max-width: 1106px) {
+  #hero-title {
+    font-size: 5rem;
+  }
+  form {
+    width: 100%;
+  }
+}
+
+@media Screen and (max-width: 934px) {
+  .side-bar {
+    display: none;
+  }
+  form {
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: medium;
+  }
+}
+
+@media Screen and (max-width: 769px) {
+  #hero-title {
+    font-size: 5rem;
+  }
+  form {
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@media Screen and (max-width: 601px) {
+  #hero-title {
+    font-size: 3rem;
+  }
+  form {
+    width: 100%;
+  }
+}

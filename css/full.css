@@ -1,0 +1,147 @@
+.hero.is-primary {
+  z-index: 1;
+  color: #fff;
+  background-color: #666666;
+}
+
+.title {
+  color: white;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+.hero-background {
+  z-index: -1;
+  opacity: 0.4;
+  background-image: url(../images/gameHero1.jpeg);
+}
+
+.hero-body {
+  height: 20vh;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.title-container {
+  position: inline-flex;
+  width: 100vw;
+}
+
+#hero-title {
+  font-size: 8rem;
+}
+
+.search-bar {
+  margin: auto;
+  border-radius: 0;
+  box-shadow: 0 0 2px 0 #8a8787;
+}
+
+.button {
+  width: 7vw;
+  border-radius: 0;
+  box-shadow: 0 0 2px 0 #8a8787;
+}
+
+aside {
+  box-shadow: #202020 2px 18px 36px -18px inset;
+}
+
+.side-bar {
+  background: #666;
+  display: flex;
+  float: left;
+  align-items: center;
+  max-width: 13vw;
+  max-height: 100%;
+}
+
+.list-links {
+  width: 15vw;
+  height: 100vh;
+}
+
+li {
+  margin-top: 10px;
+  padding: 5px;
+  align-content: flex-start;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul hr {
+  border: 1px solid #3d3d3d;
+}
+
+.card-domain {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+}
+
+.card {
+  height: 45vh;
+  width: 25vw;
+  margin: 4%;
+  box-shadow: #0066ff 0px 15px 20px -10px;
+}
+
+#game-title {
+  justify-content: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.1rem;
+}
+
+#game-text {
+  width: 40vw;
+  border: none;
+}
+
+.rating {
+  background-color: #f5ae5c;
+  text-align: center;
+  padding: 20px;
+}
+
+#main-img {
+  display: block;
+  height: 45vh;
+  width: 25vw;
+}
+
+.footer-domain {
+  border: solid 0.5px #d6d1d1fa;
+  background-color: #5686a5;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+#searchBtn {
+  color: #ffff00;
+  background: linear-gradient(to right, #0066ff 0%, #6600ff 55%);
+}
+
+.btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+}
