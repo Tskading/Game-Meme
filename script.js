@@ -89,7 +89,7 @@ $(".button").on("click", function(e){
 			$("#gameReturns").empty();
 
 			// Sets image card image
-			$("#main-img").attr("src", response.results[0].background_image);
+			$("#main-img").addClass("game-Image").attr("src", response.results[0].background_image);
 
 			// Sets title based on search
 			$(".card-header-title").text(response.results[0].name);
