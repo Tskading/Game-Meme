@@ -87,8 +87,8 @@ form {
 }
 
 .card {
-  /* height: 45vh; */
-  width: 300px;
+  height: 45vh;
+  width: 25vw;
   margin: 4%;
   box-shadow: #0066ff 0px 15px 20px -10px;
 }
