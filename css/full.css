@@ -1,3 +1,21 @@
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #606d74,
+    #58676f,
+    #50616a,
+    #475c66,
+    #3f5661,
+    #354e5c,
+    #2a4756,
+    #203f51,
+    #133349,
+    #092641,
+    #041a38,
+    #060b2e
+  );
+}
+
 .hero.is-primary {
   z-index: 1;
   color: #fff;
@@ -7,6 +25,12 @@
 .title {
   color: white;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+.sub-title {
+  color: white;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  font-size: x-large;
 }
 
 .hero-background {
@@ -43,7 +67,10 @@
 }
 
 aside {
-  box-shadow: #202020 2px 18px 36px -18px inset;
+  margin-left: 10px;
+  box-shadow: #945c46 2px 18px 36px -18px inset;
+
+  height: 100vh;
 }
 
 .side-bar {
@@ -90,24 +117,22 @@ form {
   /* height: 45vh; */
   width: 300px;
   margin: 4%;
-  box-shadow: #0066ff 0px 15px 20px -10px;
+  box-shadow: #945c46 15px 5px 50px;
 }
 
 #game-title {
   justify-content: center;
   font-family: "Permanent Marker", cursive;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 #game-text {
   width: 40vw;
   border: none;
-}
-
-.rating {
-  background-color: #f5ae5c;
+  font-family: "Abril Fatface", cursive;
+  font-weight: bolder;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 20px;
 }
 
 #main-img {
@@ -118,7 +143,7 @@ form {
 
 .footer-domain {
   border: solid 0.5px #d6d1d1fa;
-  background-color: #5686a5;
+  background-color: #334f5b;
   color: #fff;
   position: fixed;
   bottom: 0;
