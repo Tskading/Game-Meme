@@ -67,6 +67,7 @@ $(".button").on("click", function(e){
 
 	localStorage.setItem('game', game);
 	gifSlideShow();
+	
 
 	console.log(game);
 
@@ -84,24 +85,53 @@ $(".button").on("click", function(e){
 			localStorage.setItem("gameID", response.results[0].id);
 			// console.log(response.results[0].backgroun_image);
 
+			// Clears card Info
+			$("#gameReturns").empty();
 
+			// Sets image card image
 			$("#main-img").attr("src", response.results[0].background_image);
 
+			// Sets title based on search
 			$(".card-header-title").text(response.results[0].name);
 
-			// var releaseDate = response.results[0].released;
-			// var p = $("<p>");
+			// Displays release date
+			var releaseDate = response.results[0].released;
+			var li = $("<li>");
 
-			// p.addClass("release").text("Release Date: " + releaseDate);
-			// $("#gameReturns").prepend(p);
+			li.addClass("release").text("Release Date: " + releaseDate);
+			$("#gameReturns").prepend(li);
+
+			// Displays metacritic score
+			var metaCritic = response.results[0].metacritic;
+			var li = $("<li>");
+
+			li.text("Metacritic Score: " + metaCritic);
+			$("#gameReturns").append(li);
+
+			// Displays platforms game is available on
+			var platforms = response.results[0].platforms;
+
+			console.log("platforms", platforms);
+
+			for ( var i = 0; i < platforms.length; i++) {
+				var li = $("<li>");
+
+				li.text(platforms[i].platform.name);
+				$("#gameReturns").append(li);
+			};
+			
+
+			// Calls youtube function to generate info for link in 
+			getYouTube();
+			
 					
 	});
 
 
 });
 // This section handles the youtube video data
-$(".button").on("click", function(response2){
-	response2.preventDefault();
+function getYouTube(response2){
+	// response2.preventDefault();
 	
 	var id = localStorage.getItem("gameID");
 	var queryYouTube = `https://api.rawg.io/api/games/${id}/youtube`;
@@ -112,29 +142,29 @@ $(".button").on("click", function(response2){
 		method: "GET"
 	}).then(function(response2){
 		console.log(response2);
-		console.log(id);
-		console.log(externalID);
+		// console.log("id:", id);
+		// console.log(externalID);
 
 		var externalID = response2.results[0].external_id;
-		$("#gameReturns").text("https://www.youtube.com/watch?v=" + externalID);
+		$("#game-title").attr("href", "https://www.youtube.com/watch?v=" + externalID);
 	});
-});
+};
 
 
 // THis section handles the achievement data
-$(".button").on("click", function(response3){
-	console.log(response3);
+// $(".button").on("click", function(response3){
+// 	console.log(response3);
 
-	var id2 = localStorage.getItem("gameID");
-	var queryAchievements = `https://api.rawg.io/api/games/${id2}/achievements`;
+// 	var id2 = localStorage.getItem("gameID");
+// 	var queryAchievements = `https://api.rawg.io/api/games/${id2}/achievements`;
 
-	$.ajax({
-		url:queryAchievements,
-		method: "GET"
-	}).then(function(response3){
-		console.log(response3);
+// 	$.ajax({
+// 		url:queryAchievements,
+// 		method: "GET"
+// 	}).then(function(response3){
+// 		console.log(response3);
 
-		// $("#gameReturns").children.
-	})
-});
+// 		// $("#gameReturns").children.
+// 	})
+// });
 	
