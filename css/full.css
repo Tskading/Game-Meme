@@ -1,3 +1,21 @@
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #606d74,
+    #58676f,
+    #50616a,
+    #475c66,
+    #3f5661,
+    #354e5c,
+    #2a4756,
+    #203f51,
+    #133349,
+    #092641,
+    #041a38,
+    #060b2e
+  );
+}
+
 .hero.is-primary {
   z-index: 1;
   color: #fff;
@@ -90,7 +108,7 @@ form {
   height: 45vh;
   width: 25vw;
   margin: 4%;
-  box-shadow: #0066ff 0px 15px 20px -10px;
+  box-shadow: #945c46 15px 5px 50px;
 }
 
 #game-title {

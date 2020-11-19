@@ -7,7 +7,7 @@ function gifSlideShow() {
 	console.log(game);
 
 	for (i = 0; i < game.length; i++) { 
-	  var giphyURL = `http://api.giphy.com/v1/gifs/search?q=${game}&api_key=0p6VOTrg6ToWiukHOTdQlHu3z5d9TSee&limit=5`;
+	  var giphyURL = `https://api.giphy.com/v1/gifs/search?q=${game}&api_key=0p6VOTrg6ToWiukHOTdQlHu3z5d9TSee&limit=5`;
 	  
 	 console.log(giphyURL);
  
