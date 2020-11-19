@@ -1,2 +1,2 @@
-# Game-Meme
-Group project with multiple API's
+# Game & Gif
+Game & Gif is a website for when you just get away from the stress of the daily grind.  We aren't here to change your life, we are here to supplement your downtime, and give a one stop page that allows you to explore the online world of games and gifs!  
