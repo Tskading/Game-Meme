@@ -87,8 +87,8 @@ form {
 }
 
 .card {
-  height: 45vh;
-  width: 25vw;
+  /* height: 45vh; */
+  width: 300px;
   margin: 4%;
   box-shadow: #0066ff 0px 15px 20px -10px;
 }
@@ -112,8 +112,8 @@ form {
 
 #main-img {
   display: block;
-  height: 45vh;
-  width: 25vw;
+  height: auto;
+  width: auto;
 }
 
 .footer-domain {
@@ -145,3 +145,8 @@ form {
   margin: 0 0 5px 0;
   background: #fff;
 }
+
+/* #gameReturns {
+  overflow-y: scroll;
+  height: 200px;
+} */
