@@ -58,16 +58,17 @@ function showSlides(n) {
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 // RAWG API
+var gameSearch = $('#userGameInput');
 
-$(".button").on("click", function(e){
+$(".button").click( function searchButton(e){
 	e.preventDefault();
 	console.log(e);
 
-	var game = $("#userGameInput").val().trim();
+	var search = gameSearch.submit();
+	var game = search.val().trim();
 
 	localStorage.setItem('game', game);
 	gifSlideShow();
-	
 
 	console.log(game);
 
@@ -75,7 +76,6 @@ $(".button").on("click", function(e){
 	
 	localStorage.setItem("game", game);
 	
-
 	$.ajax({
 		url: queryURL,
 		method: "GET"
@@ -123,12 +123,10 @@ $(".button").on("click", function(e){
 
 			// Calls youtube function to generate info for link in 
 			getYouTube();
-			
-					
+							
 	});
-
-
 });
+
 // This section handles the youtube video data
 function getYouTube(response2){
 	// response2.preventDefault();
