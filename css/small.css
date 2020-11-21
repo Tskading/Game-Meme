@@ -103,4 +103,9 @@
     width: 95%;
     border: none;
   }
+
+  /* adding size to the search button on mobile */
+  .button {
+    width: 100px;
+  }
 }
