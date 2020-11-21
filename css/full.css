@@ -69,6 +69,10 @@ html {
 size: 120%;
 }
 
+#resetBtn:hover {
+  size: 120%;
+  }
+
 aside {
   box-shadow: #202020 2px 18px 36px -18px inset;
   max-height: 100%;
