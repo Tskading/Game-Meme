@@ -1,4 +1,4 @@
-body {
+html {
   background-image: linear-gradient(
     to right bottom,
     #606d74,
@@ -25,6 +25,11 @@ body {
 .title {
   color: white;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+.sub-title {
+  color: white;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  font-size: x-large;
 }
 
 .hero-background {
@@ -66,6 +71,7 @@ size: 120%;
 
 aside {
   box-shadow: #202020 2px 18px 36px -18px inset;
+  max-height: 100%;
 }
 
 .side-bar {
@@ -216,10 +222,13 @@ form {
     #041a38,
     #060b2e
   );
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 0; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 30%; /* Could be more or less, depending on screen size */
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 /* The Close Button */
@@ -243,11 +252,12 @@ color:#ffff00;
 
 }
 
-#navlink1 {
-  color: #ffff00;
+.navlink1 {
+  color: #d8d8d8;
 
 };
 
-#navlink1:hover {
+.navlink1:hover {
 size: 110%;
+color: #4a4a4a;
 };

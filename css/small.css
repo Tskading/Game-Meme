@@ -1,13 +1,42 @@
-@media Screen and (max-width: 1106px) {
+@media Screen and (max-width: 1408px) {
   #hero-title {
     font-size: 5rem;
   }
   form {
     width: 100%;
   }
+
+  .title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  }
+  .sub-title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    font-size: x-large;
+  }
 }
 
-@media Screen and (max-width: 934px) {
+@media Screen and (max-width: 1216px) {
+  #hero-title {
+    font-size: 5rem;
+  }
+  form {
+    width: 100%;
+  }
+
+  .title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  }
+  .sub-title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    font-size: x-large;
+  }
+}
+
+@media Screen and (max-width: 1024px) {
   .side-bar {
     display: none;
   }
@@ -19,9 +48,18 @@
     color: #fff;
     font-size: medium;
   }
+  .title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  }
+  .sub-title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    font-size: large;
+  }
 }
 
-@media Screen and (max-width: 769px) {
+@media Screen and (min-width: 769px) {
   #hero-title {
     font-size: 5rem;
   }
@@ -32,13 +70,33 @@
     text-decoration: none;
     color: #fff;
   }
+  .title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  }
+  .sub-title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    font-size: large;
+  }
 }
 
-@media Screen and (max-width: 601px) {
+@media Screen and (max-width: 768px) {
   #hero-title {
     font-size: 3rem;
+    margin-right: 40px;
   }
   form {
     width: 100%;
+  }
+  .title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  }
+  .sub-title {
+    color: white;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    font-size: medium;
+    margin-right: 40px;
   }
 }
