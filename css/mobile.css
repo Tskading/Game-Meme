@@ -49,6 +49,7 @@
   .card-domain {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   .card {
@@ -58,6 +59,10 @@
     box-shadow: #0066ff 0px 15px 20px -10px;
   }
 
+  .card-image {
+    width: 95%;
+  }
+
   #game-title {
     justify-content: center;
     font-family: "Permanent Marker", cursive;
@@ -65,7 +70,7 @@
   }
 
   #game-text {
-    width: 40vw;
+    width: 95%;
     border: none;
   }
 
