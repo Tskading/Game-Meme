@@ -99,4 +99,8 @@
     font-size: medium;
     margin-right: 40px;
   }
+  #game-text {
+    width: 95%;
+    border: none;
+  }
 }
