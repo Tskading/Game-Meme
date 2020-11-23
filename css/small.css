@@ -15,6 +15,12 @@
     text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
     font-size: x-large;
   }
+
+  .uniqueURL {
+    text-shadow: 0 0 20px #0066ff, 0 0 30px #0066ff, 0 0 40px #0066ff, 0 0 55px #945c46, 0 0 75px #945c46, 2px 2px 2px rgba(11,19,206,0);
+    color: #FFFFFF;
+    background: transparent;
+  }
 }
 
 @media Screen and (max-width: 1216px) {
@@ -33,6 +39,12 @@
     color: white;
     text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
     font-size: x-large;
+  }
+
+  .uniqueURL {
+    text-shadow: 0 0 20px #0066ff, 0 0 30px #0066ff, 0 0 40px #0066ff, 0 0 55px #945c46, 0 0 75px #945c46, 2px 2px 2px rgba(11,19,206,0);
+    color: #FFFFFF;
+    background: transparent;
   }
 }
 
@@ -57,6 +69,12 @@
     text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
     font-size: large;
   }
+
+  .uniqueURL {
+    text-shadow: 0 0 20px #0066ff, 0 0 30px #0066ff, 0 0 40px #0066ff, 0 0 55px #945c46, 0 0 75px #945c46, 2px 2px 2px rgba(11,19,206,0);
+    color: #FFFFFF;
+    background: transparent;
+  }
 }
 
 @media Screen and (min-width: 769px) {
@@ -78,6 +96,12 @@
     color: white;
     text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
     font-size: large;
+  }
+
+  .uniqueURL {
+    text-shadow: 0 0 20px #0066ff, 0 0 30px #0066ff, 0 0 40px #0066ff, 0 0 55px #945c46, 0 0 75px #945c46, 2px 2px 2px rgba(11,19,206,0);
+    color: #FFFFFF;
+    background: transparent;
   }
 }
 
@@ -107,5 +131,11 @@
   /* adding size to the search button on mobile */
   .button {
     width: 100px;
+  }
+
+  .uniqueURL {
+    text-shadow: 0 0 20px #0066ff, 0 0 30px #0066ff, 0 0 40px #0066ff, 0 0 55px #945c46, 0 0 75px #945c46, 2px 2px 2px rgba(11,19,206,0);
+    color: #FFFFFF;
+    background: transparent;
   }
 }

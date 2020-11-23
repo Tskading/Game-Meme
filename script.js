@@ -18,6 +18,8 @@ $("#searchBtn").click( function searchButton(e){
 
 	gifSlideShow();
 	displayGameInfo();
+	uniqueURL();
+	modalUniqueURL();
 	}
 });
 
@@ -91,8 +93,52 @@ function getYouTube(response2){
 		console.log(response2);
 
 		var externalID = response2.results[0].external_id;
-		$("#game-title").attr("href", "https://www.youtube.com/watch?v=" + externalID);
+		if (externalID !== null)
+		$("#game-title").attr("href", "https://www.youtube.com/watch?v=" + externalID).addClass("uniqueURL");
 	});
+};
+// Sets unique urls for the side tab based on search input (#link5 is a static link)
+function uniqueURL(response3){
+
+	var gameSearch = localStorage.getItem("game");
+
+	if (gameSearch !== null){
+	$("#link1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article").addClass("uniqueURL")};
+
+	if (gameSearch !== null){
+	$("#link2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch).addClass("uniqueURL")};
+
+	if (gameSearch !== null){
+	$("#link3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch).addClass("uniqueURL")};
+
+	if (gameSearch !== null){
+	$("#link4").attr("href", "https://www.amazon.com/s?k=" + gameSearch).addClass("uniqueURL")};
+
+	if (gameSearch !== null){
+	$("#link6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1").addClass("uniqueURL")};
+
+};
+
+// Sets unique urls for the modal based on search input (#mlink5 is a static link)
+function modalUniqueURL(response3){
+
+	var gameSearch = localStorage.getItem("game");
+
+	if (gameSearch !== null){
+	$("#mlink1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article").addClass("uniqueURL")};
+
+	if (gameSearch !== null){
+	$("#mlink2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch).addClass("uniqueURL")};
+
+	if (gameSearch !== null){
+	$("#mlink3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch).addClass("uniqueURL")};
+
+	if (gameSearch !== null){
+	$("#mlink4").attr("href", "https://www.amazon.com/s?k=" + gameSearch).addClass("uniqueURL")};
+
+	if (gameSearch !== null){
+	$("#mlink6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1").addClass("uniqueURL")};
+
 };
 
 ///////////////////////// Display Slide Show //////////////////////////////////
@@ -193,6 +239,8 @@ window.onload = function() {
 	$("#userGameInput").attr("placeholder", "You last searched for " + getSearch)};
 	gifSlideShow();
 	displayGameInfo();
+	uniqueURL();
+	modalUniqueURL();
 	}
 
 ///////////////////////// Clear Local Storage ///////////////////////////////////	
