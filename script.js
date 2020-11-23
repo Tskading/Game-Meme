@@ -102,19 +102,19 @@ function uniqueURL(response3){
 	var gameSearch = localStorage.getItem("game");
 
 	if (gameSearch !== null){
-	$("#link1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article")};
+	$("#link1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article").addClass("uniqueURL")};
 
 	if (gameSearch !== null){
-	$("#link2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch)};
+	$("#link2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch).addClass("uniqueURL")};
 
 	if (gameSearch !== null){
-	$("#link3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch)};
+	$("#link3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch).addClass("uniqueURL")};
 
 	if (gameSearch !== null){
-	$("#link4").attr("href", "https://www.amazon.com/s?k=" + gameSearch)};
+	$("#link4").attr("href", "https://www.amazon.com/s?k=" + gameSearch).addClass("uniqueURL")};
 
 	if (gameSearch !== null){
-	$("#link6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1")};
+	$("#link6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1").addClass("uniqueURL")};
 
 };
 
@@ -124,19 +124,19 @@ function modalUniqueURL(response3){
 	var gameSearch = localStorage.getItem("game");
 
 	if (gameSearch !== null){
-	$("#mlink1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article")};
+	$("#mlink1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article").addClass("uniqueURL")};
 
 	if (gameSearch !== null){
-	$("#mlink2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch)};
+	$("#mlink2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch).addClass("uniqueURL")};
 
 	if (gameSearch !== null){
-	$("#mlink3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch)};
+	$("#mlink3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch).addClass("uniqueURL")};
 
 	if (gameSearch !== null){
-	$("#mlink4").attr("href", "https://www.amazon.com/s?k=" + gameSearch)};
+	$("#mlink4").attr("href", "https://www.amazon.com/s?k=" + gameSearch).addClass("uniqueURL")};
 
 	if (gameSearch !== null){
-	$("#mlink6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1")};
+	$("#mlink6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1").addClass("uniqueURL")};
 
 };
 
