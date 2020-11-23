@@ -5,6 +5,7 @@ var search = [];
 
 $("#searchBtn").click( function searchButton(e){
 	e.preventDefault();
+	var search = [];
 	var submittedSearch = gameSearch.submit();
 	var userChoice = submittedSearch.val().toLowerCase();
 	search.push(userChoice);
@@ -26,8 +27,6 @@ function displayGameInfo() {
 	var game = localStorage.getItem('game');
 	var queryURL = `https://api.rawg.io/api/games?search=${game}&key=e318c637851a4a5b9428f416408759cc`;
 	
-	// localStorage.setItem("game", game);
-	
 	$.ajax({
 		url: queryURL,
 		method: "GET"
@@ -35,7 +34,6 @@ function displayGameInfo() {
 			console.log(response);
 			// Set youtube game ID in local storage here 
 			localStorage.setItem("gameID", response.results[0].id);
-			// console.log(response.results[0].backgroun_image);
 
 			// Clears card Info
 			$("#gameReturns").empty();
@@ -81,7 +79,6 @@ function displayGameInfo() {
 
 // This section handles the youtube video data
 function getYouTube(response2){
-	// response2.preventDefault();
 	
 	var id = localStorage.getItem("gameID");
 	var queryYouTube = `https://api.rawg.io/api/games/${id}/youtube`;
@@ -92,8 +89,6 @@ function getYouTube(response2){
 		method: "GET"
 	}).then(function(response2){
 		console.log(response2);
-		// console.log("id:", id);
-		// console.log(externalID);
 
 		var externalID = response2.results[0].external_id;
 		$("#game-title").attr("href", "https://www.youtube.com/watch?v=" + externalID);
