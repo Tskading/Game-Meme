@@ -19,6 +19,7 @@ $("#searchBtn").click( function searchButton(e){
 	gifSlideShow();
 	displayGameInfo();
 	uniqueURL();
+	modalUniqueURL();
 	}
 });
 
@@ -95,7 +96,7 @@ function getYouTube(response2){
 		$("#game-title").attr("href", "https://www.youtube.com/watch?v=" + externalID);
 	});
 };
-// Sets unique urls for the side tab based on search input
+// Sets unique urls for the side tab based on search input (#link5 is a static link)
 function uniqueURL(response3){
 
 	var gameSearch = localStorage.getItem("game");
@@ -114,6 +115,28 @@ function uniqueURL(response3){
 
 	if (gameSearch !== null){
 	$("#link6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1")};
+
+};
+
+// Sets unique urls for the modal based on search input (#mlink5 is a static link)
+function modalUniqueURL(response3){
+
+	var gameSearch = localStorage.getItem("game");
+
+	if (gameSearch !== null){
+	$("#mlink1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article")};
+
+	if (gameSearch !== null){
+	$("#mlink2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch)};
+
+	if (gameSearch !== null){
+	$("#mlink3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch)};
+
+	if (gameSearch !== null){
+	$("#mlink4").attr("href", "https://www.amazon.com/s?k=" + gameSearch)};
+
+	if (gameSearch !== null){
+	$("#mlink6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1")};
 
 };
 
@@ -216,6 +239,7 @@ window.onload = function() {
 	gifSlideShow();
 	displayGameInfo();
 	uniqueURL();
+	modalUniqueURL();
 	}
 
 ///////////////////////// Clear Local Storage ///////////////////////////////////	
