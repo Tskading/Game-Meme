@@ -93,7 +93,8 @@ function getYouTube(response2){
 		console.log(response2);
 
 		var externalID = response2.results[0].external_id;
-		$("#game-title").attr("href", "https://www.youtube.com/watch?v=" + externalID);
+		if (externalID !== null)
+		$("#game-title").attr("href", "https://www.youtube.com/watch?v=" + externalID).addClass("uniqueURL");
 	});
 };
 // Sets unique urls for the side tab based on search input (#link5 is a static link)
