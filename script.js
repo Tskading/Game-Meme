@@ -188,6 +188,9 @@ window.onclick = function(event) {
 
 //Get Local Storage
 window.onload = function() {
+	var getSearch = localStorage.getItem('game');
+	if (getSearch !== null){
+	$("#userGameInput").attr("placeholder", "You last searched for " + getSearch)};
 	gifSlideShow();
 	displayGameInfo();
 	}
@@ -198,4 +201,4 @@ $("#resetBtn").click( function resetPage(e){
 	e.preventDefault();
 	localStorage.clear('game');
 	location.reload();
-});
+	});
