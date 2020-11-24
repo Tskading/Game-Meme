@@ -103,19 +103,19 @@ function uniqueURL(response3){
 	var gameSearch = localStorage.getItem("game");
 
 	if (gameSearch !== null){
-	$("#link1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article").addClass("uniqueURL")};
+	$("#link1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article").addClass("uniqueURL").text(gameSearch.toUpperCase() + " on Polygon")};
 
 	if (gameSearch !== null){
-	$("#link2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch).addClass("uniqueURL")};
+	$("#link2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch).addClass("uniqueURL").text(gameSearch.toUpperCase() + " on Twitch")};
 
 	if (gameSearch !== null){
-	$("#link3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch).addClass("uniqueURL")};
+	$("#link3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch).addClass("uniqueURL").text(gameSearch.toUpperCase() + " on YouTube")};
 
 	if (gameSearch !== null){
-	$("#link4").attr("href", "https://www.amazon.com/s?k=" + gameSearch).addClass("uniqueURL")};
+	$("#link4").attr("href", "https://www.amazon.com/s?k=" + gameSearch).addClass("uniqueURL").text("Buy " + gameSearch.toUpperCase() + " on Amazon")};
 
 	if (gameSearch !== null){
-	$("#link6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1").addClass("uniqueURL")};
+	$("#link5").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1").addClass("uniqueURL").text(gameSearch.toUpperCase() + " on r/gaming")};
 
 };
 
@@ -125,19 +125,19 @@ function modalUniqueURL(response3){
 	var gameSearch = localStorage.getItem("game");
 
 	if (gameSearch !== null){
-	$("#mlink1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article").addClass("uniqueURL")};
+	$("#mlink1").attr("href", "https://www.polygon.com/search?q=" + gameSearch + "&type=Article").addClass("uniqueURL").text(gameSearch.toUpperCase() + " on Polygon")};
 
 	if (gameSearch !== null){
-	$("#mlink2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch).addClass("uniqueURL")};
+	$("#mlink2").attr("href", "https://www.twitch.tv/search?term=" + gameSearch).addClass("uniqueURL").text(gameSearch.toUpperCase() + " on Twitch")};
 
 	if (gameSearch !== null){
-	$("#mlink3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch).addClass("uniqueURL")};
+	$("#mlink3").attr("href", "https://www.youtube.com/results?search_query=" + gameSearch).addClass("uniqueURL").text(gameSearch.toUpperCase() + " on YouTube")};
 
 	if (gameSearch !== null){
-	$("#mlink4").attr("href", "https://www.amazon.com/s?k=" + gameSearch).addClass("uniqueURL")};
+	$("#mlink4").attr("href", "https://www.amazon.com/s?k=" + gameSearch).addClass("uniqueURL").text("Buy " + gameSearch.toUpperCase() + " on Amazon")};
 
 	if (gameSearch !== null){
-	$("#mlink6").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1").addClass("uniqueURL")};
+	$("#mlink5").attr("href", "https://www.reddit.com/r/gaming/search?q=" + gameSearch + "&restrict_sr=1").addClass("uniqueURL").text(gameSearch.toUpperCase() + " on r/gaming")};
 
 };
 
