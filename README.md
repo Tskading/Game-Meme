@@ -27,8 +27,8 @@ Also, did you know you weren't using your prime membersip to its fullest - we ha
 
 [Game & Gif Live Page](https://tskading.github.io/Game-Meme)
 
-![Main Page](images\mainPage.png)
-![Mobile Page](images\mainMobile.png)
+![Main Page](images/mainPage.png)
+![Mobile Page](images/mainMobile.png)
 
 
 # 👥 Developers 👥 
